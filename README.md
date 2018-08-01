@@ -104,6 +104,9 @@ You can have helm-test run every time it detects a change in your chart by simpl
 ### Running tests against all helm charts
 You can have helm-test run on main folder to test all charts in subfolder by `helm-test --all` on main folder
 
+### Generate report for CI
+You can have helm-test run on ci and display report by `helm-test --reporter <name>`
+
 ## License
 Copyright (c) 2017 Karl Stoney
 Licensed under the MIT license.

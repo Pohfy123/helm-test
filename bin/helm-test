@@ -13,11 +13,13 @@ program
   .version(version)
   .option('-w, --watch', 'Watch for file changes and re-run tests')
   .option('-a, --all', 'Run test against all charts')
+  .option('-R, --reporter <name>', 'specify the reporter to use', 'spec')
   .parse(process.argv);
 
 app.test({
   watch: program.watch,
-  all: program.all
+  all: program.all,
+  reporter: program.reporter
 }, err => {
   logger.log('Finished.');
   if(err) {
