@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-process.env.DEBUG="helm-test,helm-test:*"
+process.env.DEBUG='helm-test,helm-test:*';
 const version = require('../package.json').version;
 const logger = new require('../lib/logger')();
 const exec = new require('../lib/exec')();
